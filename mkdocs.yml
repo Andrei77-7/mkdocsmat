@@ -1,9 +1,12 @@
 site_name: Мой сайт
 site_url: https://sitename.example
+# Навигация
 nav:
   - Блог:
     - blog/index.md
   - Руководство:
+    - install.md
+    - git.md
     - admonitions.md
     - code-exampel.md
     - content-tabs.md
@@ -16,137 +19,50 @@ nav:
         - Псков.md
         - Калуга.md
         - Приозерск.md
+# Конфигурация
 theme:
   name: material
-  features:
-    - navigation.instant
-    - announce.dismiss
-    - content.action.edit
-    - content.action.view
-    - content.code.annotate
-    - content.code.copy
-    # - content.code.select
-    # - content.footnote.tooltips
-    # - content.tabs.link
-    - content.tooltips
-    # - header.autohide
-    # - navigation.expand
-    - navigation.footer
-    - navigation.indexes
-    # - navigation.instant
-    # - navigation.instant.prefetch
-    # - navigation.instant.progress
-    # - navigation.prune
-    - navigation.sections
-    - navigation.tabs
-    # - navigation.tabs.sticky
-    - navigation.top
-    - navigation.tracking
-    - search.highlight
-    - search.share
-    - search.suggest
-    - toc.follow
-  font:
-    text: Merriweather Sans
-    code: Red Hat Mono
+  language: ru
   logo: assets/logo.png
-  favicon: assets/favicon.ico
-  features:
-    - navigation.footer
-  palette:
-    # Dark Mode
-    - scheme: slate
-      toggle:
-        icon: material/weather-sunny
-        name: Dark mode
-      primary: green
-      accent: deep purple
-
-    # Light Mode
-    - scheme: default
-      toggle:
-        icon: material/weather-night
-        name: Light mode
-      primary: blue
-      accent: deep orange
-
+  favicon: images/favicon.png
+  icon:
+    previous: fontawesome/solid/angle-left
+    next: fontawesome/solid/angle-right
+# Расширения
 markdown_extensions:
-  - attr_list
-  - pymdownx.blocks.caption
-  - pymdownx.tasklist:
-      custom_checkbox: true
-  - pymdownx.arithmatex:
-      generic: true
-  - pymdownx.emoji:
-      emoji_index: !!python/name:material.extensions.emoji.twemoji
-      emoji_generator: !!python/name:material.extensions.emoji.to_svg
-  - pymdownx.highlight:
-      anchor_linenums: true
-      line_spans: __span
-      pygments_lang_class: true
-  - pymdownx.inlinehilite
-  - pymdownx.snippets
-  - pymdownx.superfences:
+  - admonition #Рекомендации https://squidfunk.github.io/mkdocs-material/reference/admonitions/
+  - pymdownx.details #Рекомендации
+  - pymdownx.superfences #Рекомендации
+  - attr_list # Списки атрибутов
+  - def_list # Списки определений https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dl
+  - footnotes # Сноски https://python-markdown.github.io/extensions/footnotes/
+  - toc:
+      permalink: true
+      permalink_title: Anchor link to this section for reference
+      toc_depth: 3
+  - tables
+  - pymdownx.superfences: # Диаграммы
       custom_fences:
         - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
-  - pymdownx.tabbed:
-      alternate_style: true
-  - admonition
-  - pymdownx.details
-  - def_list
-  - pymdownx.magiclink # auto-link HTML, FTP, and email links https://facelessuser.github.io/pymdown-extensions/extensions/magiclink/
-  - pymdownx.keys # add keys like ++ctrl+alt+delete++ # https://facelessuser.github.io/pymdown-extensions/extensions/keys/
-  - pymdownx.tabbed # add tabs https://facelessuser.github.io/pymdown-extensions/extensions/tabbed/
-  - pymdownx.details # add spoiler (??? note) https://facelessuser.github.io/pymdown-extensions/extensions/details/
-  - pymdownx.snippets # insert a file into another markdown file https://facelessuser.github.io/pymdown-extensions/extensions/snippets/
-  - pymdownx.superfences # https://facelessuser.github.io/pymdown-extensions/extensions/superfences/
-  - footnotes # https://python-markdown.github.io/extensions/footnotes/
-  - tables # https://python-markdown.github.io/extensions/tables/
-  - admonition # tips & notes (!!! note) https://squidfunk.github.io/mkdocs-material/reference/admonitions/
-  - attr_list # https://python-markdown.github.io/extensions/attr_list/
+  - pymdownx.critic 
+  - pymdownx.caret # Выделение текста
+  - pymdownx.keys # Выделение клавиш
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.arithmatex: # Математические формулы
+      generic: true
+  - attr_list
   - md_in_html
-  - smarty # converts ASCII dashes, quotes and ellipses to their HTML entity equivalents https://python-markdown.github.io/extensions/smarty/
-
-extra:
-  social:
-    - icon: simple/youtube
-      link: https://youtube.com
-    - icon: simple/linkedin
-      link: https://linkedin.com
-    - icon: fontawesome/brands/vk
-      link: https://vk.com/feed
-extra_css:
-  - stylesheets/extra.css
-plugins:
-  - social:
-      cards: false
-      debug: false
-      debug_color: green
-      cards_layout_options:
-        background_color: "#0FF1CE"
-        background_image: layouts/stairs.jpg
-        color: "#de519e"
-        font_family: Caveat
-  - search
-extra:
-    generator: false
-    analytics:
-        provider: google
-        property: G-2VE6CRS730
-        feedback:
-          title: Была ли эта страница полезной?
-          ratings:
-            - icon: material/thumb-up-outline
-              name: Да
-              data: 1
-              note: >-
-                Спасибо!
-            - icon: material/thumb-down-outline
-              name: Нет
-              data: 0
-              note: Печалька.....
+  - pymdownx.blocks.caption
+  - pymdownx.emoji: # Смайлики
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - def_list
+  - pymdownx.tasklist: # Списки
+      custom_checkbox: true
+# Javascript
 extra_javascript:
   - javascripts/mathjax.js
   - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
