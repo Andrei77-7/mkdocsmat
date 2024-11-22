@@ -40,25 +40,6 @@ $$
 
 :smile: :heart: :thumbsup: :100: :muscle: :accept: :point_up: :airplane: :champagne: :raised_hands: :boom: :laughing: :metal: :handshake: :older_man: :sheep: :no_entry: :mouse: :relieved: :question: :wink: :wave: :rainbow: :sleeping:  
 
-:point_right: [The full list of short emoji names](https://github.com/facelessuser/pymdown-extensions/blob/main/pymdownx/emoji1_db.py) 
-
-![Placeholder](./image/Catcar.jpg){ align=left style="height: 75%; width: 50%; border-radius: 5px;" loading=lazy}
-# Hide the Pain Harold is the meme of the decade (according to Imgur).   
-## Hungarian legend András Arató found fame after he was turned into a meme for his seemingly pained smiling expression.
-
-<div class="foto">
-
-<div class="menu-foto">
-<a href="stories">
-<figure><img class="menu-img" width="128" height="128" src="./image/Catcar.jpg" />
-<figcaption>Фото</figcaption>
-</figure></a>
-</div>
-</div>
-
-
-[:octicons-book-16: Читать](code-exampel.md){ .md-button }
-
 - [x] Lorem ipsum dolor sit amet, consectetur adipiscing elit
 - [ ] Vestibulum convallis sit amet nisi a tincidunt
     * [x] In hac habitasse platea dictumst

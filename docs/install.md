@@ -14,11 +14,7 @@
 Версия Direct3D: 1.611.1-81528511
 Версия DXCore: 10.0.26100.1-240331-1435.ge-release
 Версия Windows: 10.0.22631.4460``
-``` yaml
-theme:
-  features:
-    - content.code.copy
-```
+``` 
 
 - [x] установить [ОС](https://learn.microsoft.com/ru-ru/windows/wsl/basic-commands#install)
 - [ ] Vestibulum convallis sit amet nisi a tincidunt
