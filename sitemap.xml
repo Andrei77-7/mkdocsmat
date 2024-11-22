@@ -1,47 +1,87 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://sitename.example/</loc>
-         <lastmod>2024-11-20</lastmod>
+         <loc>https://andrei77-7.github.io/mkdocsmat/</loc>
+         <lastmod>2024-11-22</lastmod>
     </url>
     <url>
-         <loc>https://sitename.example/admonitions/</loc>
-         <lastmod>2024-11-20</lastmod>
+         <loc>https://andrei77-7.github.io/mkdocsmat/admonitions/</loc>
+         <lastmod>2024-11-22</lastmod>
     </url>
     <url>
-         <loc>https://sitename.example/code-exampel/</loc>
-         <lastmod>2024-11-20</lastmod>
+         <loc>https://andrei77-7.github.io/mkdocsmat/code-exampel/</loc>
+         <lastmod>2024-11-22</lastmod>
     </url>
     <url>
-         <loc>https://sitename.example/content-tabs/</loc>
-         <lastmod>2024-11-20</lastmod>
+         <loc>https://andrei77-7.github.io/mkdocsmat/content-tabs/</loc>
+         <lastmod>2024-11-22</lastmod>
     </url>
     <url>
-         <loc>https://sitename.example/diagram-examples/</loc>
-         <lastmod>2024-11-20</lastmod>
+         <loc>https://andrei77-7.github.io/mkdocsmat/diagram-examples/</loc>
+         <lastmod>2024-11-22</lastmod>
     </url>
     <url>
-         <loc>https://sitename.example/equations/</loc>
-         <lastmod>2024-11-20</lastmod>
+         <loc>https://andrei77-7.github.io/mkdocsmat/equations/</loc>
+         <lastmod>2024-11-22</lastmod>
     </url>
     <url>
-         <loc>https://sitename.example/git/</loc>
-         <lastmod>2024-11-20</lastmod>
+         <loc>https://andrei77-7.github.io/mkdocsmat/git/</loc>
+         <lastmod>2024-11-22</lastmod>
     </url>
     <url>
-         <loc>https://sitename.example/install/</loc>
-         <lastmod>2024-11-20</lastmod>
+         <loc>https://andrei77-7.github.io/mkdocsmat/install/</loc>
+         <lastmod>2024-11-22</lastmod>
     </url>
     <url>
-         <loc>https://sitename.example/setki/</loc>
-         <lastmod>2024-11-20</lastmod>
+         <loc>https://andrei77-7.github.io/mkdocsmat/setki/</loc>
+         <lastmod>2024-11-22</lastmod>
     </url>
     <url>
-         <loc>https://sitename.example/Blog/Rasskazi/index1/</loc>
-         <lastmod>2024-11-20</lastmod>
+         <loc>https://andrei77-7.github.io/mkdocsmat/Install-guide/</loc>
+         <lastmod>2024-11-22</lastmod>
     </url>
     <url>
-         <loc>https://sitename.example/%D0%9F%D1%80%D0%B8%D0%BC%D0%B5%D1%80%D1%8B%20%D0%B4%D0%BE%D0%BA%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D0%BE%D0%B2/</loc>
-         <lastmod>2024-11-20</lastmod>
+         <loc>https://andrei77-7.github.io/mkdocsmat/Install-guide/environment-preparation/</loc>
+         <lastmod>2024-11-22</lastmod>
+    </url>
+    <url>
+         <loc>https://andrei77-7.github.io/mkdocsmat/Install-guide/faq/</loc>
+         <lastmod>2024-11-22</lastmod>
+    </url>
+    <url>
+         <loc>https://andrei77-7.github.io/mkdocsmat/Install-guide/installation-validation/</loc>
+         <lastmod>2024-11-22</lastmod>
+    </url>
+    <url>
+         <loc>https://andrei77-7.github.io/mkdocsmat/Install-guide/installation/</loc>
+         <lastmod>2024-11-22</lastmod>
+    </url>
+    <url>
+         <loc>https://andrei77-7.github.io/mkdocsmat/Install-guide/kts-settings/</loc>
+         <lastmod>2024-11-22</lastmod>
+    </url>
+    <url>
+         <loc>https://andrei77-7.github.io/mkdocsmat/Install-guide/manual-installation/</loc>
+         <lastmod>2024-11-22</lastmod>
+    </url>
+    <url>
+         <loc>https://andrei77-7.github.io/mkdocsmat/Install-guide/remove/</loc>
+         <lastmod>2024-11-22</lastmod>
+    </url>
+    <url>
+         <loc>https://andrei77-7.github.io/mkdocsmat/Install-guide/rollback/</loc>
+         <lastmod>2024-11-22</lastmod>
+    </url>
+    <url>
+         <loc>https://andrei77-7.github.io/mkdocsmat/Install-guide/spo-deployment/</loc>
+         <lastmod>2024-11-22</lastmod>
+    </url>
+    <url>
+         <loc>https://andrei77-7.github.io/mkdocsmat/Install-guide/system-requirements/</loc>
+         <lastmod>2024-11-22</lastmod>
+    </url>
+    <url>
+         <loc>https://andrei77-7.github.io/mkdocsmat/Install-guide/update/</loc>
+         <lastmod>2024-11-22</lastmod>
     </url>
 </urlset>
