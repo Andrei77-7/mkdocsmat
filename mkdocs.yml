@@ -1,13 +1,14 @@
-site_name: Мой сайт
+site_name: Мир
 site_url: https://andrei77-7.github.io/mkdocsmat/
 repo_url: https://github.com/Andrei77-7/mkdocsmat
 # Навигация
 nav:
-  - Архитектура:
-      - Install-guide/index.md
-      - Системные требования: Install-guide/system-requirements.md
-      - Вопросы и ответы: Install-guide/faq.md
-      - Тестирование: Install-guide/installation-validation.md
+  - Примеры руководств:
+    - Руководство оператора:
+        - Системные требования: Install-guide/system-requirements.md
+        - Минимальные: Install-guide/remove.md
+        - Вопросы и ответы: Install-guide/faq.md
+        - Тестирование: Install-guide/installation-validation.md
   - Быстрый старт:
     - Система контроля версий: git.md
     - Примечания: admonitions.md
@@ -63,6 +64,8 @@ theme:
     - attr_list # Узнать для чего
     - md_in_html # Узнать для чего
     - pymdownx.blocks.caption # Узнать для чего
+    - navigation.top # Кнопка к началу при длинном списке
+    - content.code.copy # Копирование
   plugins:
   - search: # Поиск по сайту
       lang:
@@ -101,13 +104,37 @@ markdown_extensions:
 extra_javascript:
   - javascripts/mathjax.js # Стили отображения математических формул
   - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+  - javascripts/shortcuts.js
 plugins:
+  - search
   - social:
       debug: false
       debug_color: yellow
       cards_layout: custom
       cards_layout_options:
-        background_color: "#0FF1CE8F"
-        background_image: layouts/stairs.jpg
-        color: "#DE9151"
+        background_image: layouts/background.png
+        background_color: "#a5082a"     
+        color: "#0878a5"
         font_family: Caveat
+extra: 
+  social: # Настройка нижнего колонтитула
+    - icon: fontawesome/brands/telegram
+      link: https://t.me/
+      name: Telegram
+    - icon: fontawesome/brands/vk
+      link: https://vk.com/
+      name: Страница ВКонтакте
+  analytics:
+        provider: google
+        property: G-2VE6CRS730
+        feedback:
+          title: Вам нравится эта страница?
+          ratings:
+            - icon: material/thumb-up-outline
+              name: Да
+              data: 1
+              note: Спасибо!
+            - icon: material/thumb-down-outline
+              name: Нет
+              data: 0
+              note: Будем стараться делать лучше

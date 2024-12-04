@@ -44,3 +44,6 @@ console.log("The concatenated string is:", result);
       return 0;
     }
     ```
+``` { .yaml .annotate }
+# Code block content
+```
