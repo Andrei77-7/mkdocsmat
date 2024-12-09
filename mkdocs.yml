@@ -18,7 +18,9 @@ nav:
         - Таблицы: content-tabs.md
         - Диаграммы: diagram-examples.md
         - Уравнения: equations.md
-        - Блоки: setki.md 
+        - Блоки: setki.md
+  - API:
+      - $api:src/mkapi.***
 # Конфигурация
 theme:
   name: material # Имя темы
@@ -66,15 +68,9 @@ theme:
     - pymdownx.blocks.caption # Узнать для чего
     - navigation.top # Кнопка к началу при длинном списке
     - content.code.copy # Копирование
-  plugins:
-  - search: # Поиск по сайту
-      lang:
-        - ru
-        - en
-  - git-revision-date-localized: # Ревизия
-      enable_creation_date: true
 markdown_extensions:
   - attr_list
+  - meta # Описание страницы
   - md_in_html # Описание в виде карточек
   - pymdownx.emoji: # Смайлы
       emoji_index: !!python/name:material.extensions.emoji.twemoji 
@@ -93,20 +89,26 @@ markdown_extensions:
   - pymdownx.tabbed:
       alternate_style: true
   - admonition # Примечания https://squidfunk.github.io/mkdocs-material/reference/admonitions/
+  - pymdownx.blocks.caption
   - pymdownx.details
   - pymdownx.caret # Выделение текста
   - pymdownx.keys # Выделение клавиш
+  - pymdownx.escapeall # Экранеирование символов
+  - pymdownx.snippets # Включение фрагментов
   - pymdownx.arithmatex: # Математические формулы
       generic: true
   - pymdownx.tasklist: # Отображения списков
       custom_checkbox: true
+  - markdown_include.include:
+      base_path: docs
   # Javascript
 extra_javascript:
   - javascripts/mathjax.js # Стили отображения математических формул
   - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
   - javascripts/shortcuts.js
 plugins:
-  - search
+  - tags
+  - mkdocs-video
   - social:
       debug: false
       debug_color: yellow
@@ -116,6 +118,16 @@ plugins:
         background_color: "#a5082a"     
         color: "#0878a5"
         font_family: Caveat
+  - glightbox
+  - render_swagger
+  - search: # Поиск по сайту
+      lang:
+        - ru
+        - en
+  - exclude:
+      glob:
+        - snippets/*
+        - snippets
 extra: 
   social: # Настройка нижнего колонтитула
     - icon: fontawesome/brands/telegram

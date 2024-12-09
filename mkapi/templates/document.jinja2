@@ -1,0 +1,45 @@
+<div class="mkapi-document" markdown="1">
+{%- if bases -%}
+<p class="mkapi-bases" markdown="1">Bases :
+{% for base in bases %}<span class="mkapi-base">{{ base|safe }}</span>
+{%- if not loop.last %}<span class="mkapi-comma">, </span>{% endif -%}
+{%- endfor -%}
+</p>
+{%- endif %}
+
+{{ doc.text|safe }}
+
+{% for section in doc.sections -%}
+{% if section.name and not section.kind -%}
+<p class="mkapi-section">
+<span class="mkapi-object-link">
+<span class="mkapi-section-toggle" title="Toggle {{ section.name|lower }}">
+<i class="fa-regular fa-square-minus"></i>
+</span>
+</span>
+<span class="mkapi-section-name">{{ section.name|safe }}</span>
+</p>
+{%- endif %}
+<div class="mkapi-section-content" markdown="1">
+{{ section.text|safe }}
+{% if section.items -%}
+<ul class="mkapi-item-list" markdown="1">
+{% for item in section.items -%}
+<li markdown="block">
+{% if item.name -%}
+<span class="mkapi-item-name">{{ item.name|safe }}</span>
+{%- endif -%}
+{%- if item.name and item.type %} : {% endif %}
+{% if item.type -%}
+<span class="mkapi-item-type">{{ item.type|safe }}</span>
+{%- endif -%}
+{%- if item.text %}{% if item.name or item.type %} <span class="mkapi-dash">&mdash;</span>{% endif %}
+{{ item.text|safe }}
+{% endif -%}
+</li>
+{% endfor -%}
+</ul>
+{% endif -%}
+</div>
+{% endfor %}
+</div>
