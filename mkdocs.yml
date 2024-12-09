@@ -9,6 +9,7 @@ nav:
         - Минимальные: Install-guide/remove.md
         - Вопросы и ответы: Install-guide/faq.md
         - Тестирование: Install-guide/installation-validation.md
+        - Блоки информации: setki.md
   - Быстрый старт:
     - Система контроля версий: git.md
     - Примечания: admonitions.md
