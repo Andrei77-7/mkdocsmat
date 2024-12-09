@@ -1,5 +1,5 @@
 # Примечания
-## Example of an admonition/callout with a title:
+## Уапражнения:
 
 !!! note "Title of the callout"
 
