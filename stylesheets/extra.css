@@ -1,0 +1,33 @@
+/* Кнопка Youtube */
+.youtube {
+    color: #bb0909b6;
+  }
+  @keyframes heart {
+    0%, 40%, 80%, 100% {
+      transform: scale(1);
+    }
+    20%, 60% {
+      transform: scale(1.15);
+    }
+  }
+  .heart {
+    animation: heart 1000ms infinite;
+  }
+/* Стили списка задач */
+.markdown-body .task-list-item {
+  list-style-type: none !important;
+}
+
+.markdown-body .task-list-item input[type="checkbox"] {
+  margin: 0 4px 0.25em -20px;
+  vertical-align: middle;
+}
+
+.grid.cards.riddles > ul > li > .info.riddle {
+position: absolute;
+bottom: 1em;
+}
+.grid.cards.riddles > ul > li {
+position: relative;
+padding-bottom: 5em;
+}
