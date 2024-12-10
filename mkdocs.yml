@@ -1,0 +1,149 @@
+site_name: Мир
+site_url: https://andrei77-7.github.io/mkdocsmat/
+repo_url: https://github.com/Andrei77-7/mkdocsmat
+# Навигация
+nav:
+  - Примеры руководств:
+    - Руководство оператора:
+        - Системные требования: Install-guide/system-requirements.md
+        - Минимальные: Install-guide/remove.md
+        - Вопросы и ответы: Install-guide/faq.md
+        - Тестирование: Install-guide/installation-validation.md
+        - Блоки информации: setki.md
+  - Быстрый старт:
+    - Система контроля версий: git.md
+    - Примечания: admonitions.md
+  - Примеры описаний:
+    - Вставка:
+        - Код: code-exampel.md
+        - Таблицы: content-tabs.md
+        - Диаграммы: diagram-examples.md
+        - Уравнения: equations.md
+        - Блоки: setki.md
+  - API:
+      - $api:src/mkapi.***
+# Конфигурация
+theme:
+  name: material # Имя темы
+  language: ru
+  logo: assets/logo.png
+  favicon: images/favicon.png
+  icon:
+    repo: fontawesome/brands/github # Репозиторий иконка
+  palette: # Цветовая паллитра
+    # Темный фон
+    - scheme: slate
+      toggle:
+        icon: material/weather-sunny
+        name: Dark mode
+      primary: green
+      accent: deep purple
+    # Светлый фон
+    - scheme: default
+      toggle:
+        icon: material/weather-night
+        name: Light mode
+      primary: blue
+      accent: deep orange
+  logo: assets/logo.png
+  favicon: images/favicon.png
+  icon:
+    previous: fontawesome/solid/angle-left
+    next: fontawesome/solid/angle-right
+  features: # Параметры страницы
+    - navigation.instant # Мгновенная загрузка XHR
+    - navigation.instant.prefetch # Предварительная загрузка
+    - navigation.tabs # Вкладки навигации в верхнем колонтитуле
+    - navigation.tabs.sticky # Отображение вкладок навигации в верхнем колонтитуле при прокрутке страницы
+    - navigation.instant.preview # Быстрый просмотр
+    - navigation.tracking # Отслеживание ссылок в адресной строке
+    - navigation.sections # Отображение групп разделов верхнего уровня/ Кроме мобильных устройств
+    - navigation.expand # Расширенный режим навигации
+    - navigation.instant.progress # Индикатор загрузки страницы
+    - navigation.path
+    - navigation.indexes # Указатель разделов
+    - navigation.footer
+    - content.action.edit # Действия с кодом
+    - attr_list # Узнать для чего
+    - md_in_html # Узнать для чего
+    - pymdownx.blocks.caption # Узнать для чего
+    - navigation.top # Кнопка к началу при длинном списке
+    - content.code.copy # Копирование
+markdown_extensions:
+  - attr_list
+  - meta # Описание страницы
+  - md_in_html # Описание в виде карточек
+  - pymdownx.emoji: # Смайлы
+      emoji_index: !!python/name:material.extensions.emoji.twemoji 
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg 
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences: # Диаграммы
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - admonition # Примечания https://squidfunk.github.io/mkdocs-material/reference/admonitions/
+  - pymdownx.blocks.caption
+  - pymdownx.details
+  - pymdownx.caret # Выделение текста
+  - pymdownx.keys # Выделение клавиш
+  - pymdownx.escapeall # Экранеирование символов
+  - pymdownx.snippets # Включение фрагментов
+  - pymdownx.arithmatex: # Математические формулы
+      generic: true
+  - pymdownx.tasklist: # Отображения списков
+      custom_checkbox: true
+  - markdown_include.include: # Включение (сниппет)
+      base_path: docs
+  # Javascript
+extra_javascript:
+  - javascripts/mathjax.js # Стили отображения математических формул
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+  - javascripts/shortcuts.js
+plugins:
+  - tags
+  - mkdocs-video
+  - social:
+      debug: false
+      debug_color: yellow
+      cards_layout: custom
+      cards_layout_options:
+        background_image: layouts/background.png
+        background_color: "#a5082a"     
+        color: "#0878a5"
+        font_family: Caveat
+  - glightbox
+  - render_swagger
+  - search: # Поиск по сайту
+      lang:
+        - ru
+        - en
+extra: 
+  social: # Настройка нижнего колонтитула
+    - icon: fontawesome/brands/telegram
+      link: https://t.me/
+      name: Telegram
+    - icon: fontawesome/brands/vk
+      link: https://vk.com/
+      name: Страница ВКонтакте
+  analytics:
+        provider: google
+        property: G-2VE6CRS730
+        feedback:
+          title: Вам нравится эта страница?
+          ratings:
+            - icon: material/thumb-up-outline
+              name: Да
+              data: 1
+              note: Спасибо!
+            - icon: material/thumb-down-outline
+              name: Нет
+              data: 0
+              note: Будем стараться делать лучше
