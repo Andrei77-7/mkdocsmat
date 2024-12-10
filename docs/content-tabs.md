@@ -36,21 +36,3 @@ myOtherSnippet: |-
     This is another snippet.
     It contains a link to the [Client API Cookbook](admonitions.md).
 
-![Image](./image/Catcar.jpg){ align=left }
-
-# Video example
-
-Lorem ipsum dolor sit amet
-
-![type:video](https://www.youtube.com/embed/LXb3EKWsInQ)
-
-# Аирбус
-
-![type:video](https://www.youtube.com/watch?v=DMYndXR6rrY)
-
-# Пролет
-
-
-
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/XGmbQ2iAM2w?si=K8AmyuCHJpGym6Jw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

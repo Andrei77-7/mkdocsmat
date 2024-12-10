@@ -20,8 +20,11 @@ nav:
         - Диаграммы: diagram-examples.md
         - Уравнения: equations.md
         - Блоки: setki.md
-  - API:
-      - $api:src/mkapi.***
+  - Медиа:
+      - Встраивание фото и видео: video.md
+  - Нейросети:
+      - Midjourney:
+        - Русские художники: midjourney.md
 # Конфигурация
 theme:
   name: material # Имя темы
@@ -107,6 +110,8 @@ extra_javascript:
   - javascripts/mathjax.js # Стили отображения математических формул
   - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
   - javascripts/shortcuts.js
+  - https://cdn.jsdelivr.net/npm/wavedrom@2.1.2/wavedrom.unpkg.js
+  - https://wavedrom.com/skins/default.js
 plugins:
   - tags
   - mkdocs-video
@@ -125,6 +130,8 @@ plugins:
       lang:
         - ru
         - en
+  - kroki # Схемы, диаграммы
+  - markdownwavedrom
 extra: 
   social: # Настройка нижнего колонтитула
     - icon: fontawesome/brands/telegram
