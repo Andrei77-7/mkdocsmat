@@ -5,7 +5,7 @@ repo_url: https://github.com/Andrei77-7/mkdocsmat
 nav:
   - Примеры руководств:
     - Руководство оператора:
-        - Системные требования: Install-guide/system-requirements.md
+        - Системные требования: install.md
         - Минимальные: Install-guide/remove.md
         - Вопросы и ответы: Install-guide/faq.md
         - Тестирование: Install-guide/installation-validation.md
