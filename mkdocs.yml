@@ -1,6 +1,5 @@
-site_name: Мир
-site_url: https://andrei77-7.github.io/mkdocsmat/
-repo_url: https://github.com/Andrei77-7/mkdocsmat
+site_name: М1
+site_author: Andrei
 # Навигация
 nav:
   - Примеры руководств:
@@ -27,27 +26,26 @@ nav:
         - Русские художники: midjourney.md
 # Конфигурация
 theme:
+  font:
+    text: Roboto
+    code: Roboto Mono
   name: material # Имя темы
   language: ru
-  logo: assets/logo.png
-  favicon: images/favicon.png
+  logo: assets/E.png
+  favicon: assets/favicon.ico
   icon:
     repo: fontawesome/brands/github # Репозиторий иконка
   palette: # Цветовая паллитра
     # Темный фон
-    - scheme: slate
+    - scheme: youtube
       toggle:
         icon: material/weather-sunny
         name: Dark mode
-      primary: green
-      accent: deep purple
     # Светлый фон
-    - scheme: default
+    - scheme: rutube
       toggle:
         icon: material/weather-night
         name: Light mode
-      primary: blue
-      accent: deep orange
   logo: assets/logo.png
   favicon: images/favicon.png
   icon:
@@ -114,6 +112,43 @@ extra_javascript:
   - https://wavedrom.com/skins/default.js
 plugins:
   - tags
+  - with-pdf:
+        #author: WHO
+        #copyright: ANY TEXT
+        #
+        #cover: false
+        #back_cover: true
+        #cover_title: TITLE TEXT
+        #cover_subtitle: SUBTITLE TEXT
+        #custom_template_path: TEMPLATES PATH
+        #
+        #toc_title: TOC TITLE TEXT
+        #heading_shift: false
+        #toc_level: 3
+        #ordered_chapter_level: 2
+        #excludes_children:
+        #    - 'release-notes/:upgrading'
+        #    - 'release-notes/:changelog'
+        #
+        #exclude_pages:
+        #    - 'bugs/'
+        #    - 'appendix/contribute/'
+        #convert_iframe:
+        #    - src: IFRAME SRC
+        #      img: POSTER IMAGE URL
+        #      text: ALTERNATE TEXT
+        #    - src: ...
+        #two_columns_level: 3
+        #
+        #render_js: true
+        #headless_chrome_path: headless-chromium
+        #
+        #output_path: any-place/document.pdf
+        #enabled_if_env: ENABLE_PDF_EXPORT
+        #
+        #debug_html: true
+        #show_anchors: true
+        #verbose: true
   - mkdocs-video
   - social:
       debug: false
@@ -154,3 +189,5 @@ extra:
               name: Нет
               data: 0
               note: Будем стараться делать лучше
+extra_css:
+  - stylesheets/extra.css

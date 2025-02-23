@@ -1,6 +1,16 @@
+[data-md-color-scheme="youtube"] {
+  --md-primary-fg-color:        #fe5000;
+  --md-primary-fg-color--light: #ECB7B7;
+  --md-primary-fg-color--dark:  #90030C;
+}
+[data-md-color-scheme="rutube"] {
+  --md-primary-fg-color:        #004c97;
+  --md-primary-fg-color--light: #520ae1;
+  --md-primary-fg-color--dark:  #90030C;
+}
 /* Кнопка Youtube */
 .youtube {
-    color: #a2e80cb6;
+    color: #b21515b6;
   }
   @keyframes heart {
     0%, 40%, 80%, 100% {

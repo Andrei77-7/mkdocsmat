@@ -1,7 +1,6 @@
 # Примеры блоков
 <div class="grid cards" markdown>
-
--   :material-clock-fast:{ .lg .middle } __Set up in 5 minutes__
+-   :material-clock-fast:{ .lg .middle } __Set up in 5 min__
 
     ---
 
@@ -34,10 +33,12 @@
 
     [:octicons-arrow-right-24: License](#)
 
+- Сервер М1
+    - Сервер OCP
 </div>
 <style type="text/css">
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1200px) {
 .md-typeset__table {
     table { width: 100%; }
     th { display: inline-block; }
